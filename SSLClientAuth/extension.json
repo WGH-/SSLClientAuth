@@ -1,0 +1,14 @@
+{
+    "name": "SSL Client Auth",
+    "author": "WGH",
+    "license-name": "BSD-3-Clause",
+    "version": "1.0",
+    "AutoloadClasses": {
+        "SSLClientAuthHooks": "SSLClientAuthHooks.php"
+    },
+    "Hooks": {
+        "UserLoadFromSession": "SSLClientAuthHooks::onUserLoadFromSession",
+        "PersonalUrls": "SSLClientAuthHooks::onPersonalUrls",
+        "UserLogout": "SSLClientAuthHooks::onUserLogout"
+    }
+}
